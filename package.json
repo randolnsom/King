@@ -1,0 +1,22 @@
+{
+  "name": "king-document-reader",
+  "version": "1.0.0",
+  "description": "Document-to-Podcast converter with Cameroonian voice narration",
+  "main": "backend/server.js",
+  "scripts": {
+    "install-all": "npm install && cd frontend && npm install && cd ..",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "server": "cd backend && npm start",
+    "client": "cd frontend && npm start",
+    "build": "cd frontend && npm run build",
+    "docker-build": "docker-compose build",
+    "docker-up": "docker-compose up -d",
+    "docker-down": "docker-compose down"
+  },
+  "keywords": ["document", "tts", "podcast", "cameroon", "voice"],
+  "author": "randolnsom",
+  "license": "MIT",
+  "devDependencies": {
+    "concurrently": "^8.2.0"
+  }
+}
